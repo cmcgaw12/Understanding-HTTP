@@ -1,1 +1,107 @@
+/* ---------- ELEMENT SELECTORS (style every tag of that type) ---------- */
+
+/* I set the basic look of the whole page here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* I made the header a dark blue bar with centered text */
+header {
+  background-color: #1f3a5f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* I limited the width and centered the content so it's easier to read */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* I matched the footer to the header so the page looks consistent */
+footer {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ---------- CLASS SELECTORS (style anything with that class) ---------- */
+
+/* I gave both sections a white box with rounded corners */
+.intro,
+.topics {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  text-align: center;
+}
+
+/* I turned the link into an orange button */
+.button {
+  display: inline-block;
+  background-color: #e8743b;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- ID SELECTOR (style one specific element) ---------- */
+
+/* I used an id so only the welcome title gets this color */
+#welcome-title {
+  color: #1f3a5f;
+}
+
+/* ---------- LAYOUT ---------- */
+
+/* I used flexbox to put the menu links in a row and center them */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* I used CSS grid to show the topic cards in two columns */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: #eef2f7;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ---------- LINKS ---------- */
+
+/* I styled the menu links so they are white and bold */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* I made links change when you hover so people know they can click */
+nav a:hover {
+  text-decoration: underline;
+}
+
+.button:hover {
+  background-color: #c95f2b;
+}
 
